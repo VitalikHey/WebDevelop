@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ConvCurrency</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">ConvCurrency</div>
+      <div class="nav">
+        <a href="index.html" class="active">Конвертер</a>
+        <a href="page.html">О сервисе</a>
+      </div>
+      <div class="header-actions">
+        <a href="auth.html" class="btn btn-ghost">Войти</a>
+        <a href="auth.html" class="btn btn-primary">Регистрация</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="page-title">Обмен валют</h1>
+      <p class="page-subtitle">Выберите источник и направление обмена</p>
+
+      <div class="converter">
+        <div class="panel">
+          <div class="panel-title">Вы отправляете</div>
+          <div class="tabs">
+            <input type="radio" name="t1" id="t1a" checked />
+            <label for="t1a">Валюта</label>
+            <input type="radio" name="t1" id="t1b" />
+            <label for="t1b">Криптовалюта</label>
+          </div>
+          <div class="chips">
+            <span class="chip active">Все</span>
+            <span class="chip">Рубли</span>
+            <span class="chip">Доллары</span>
+            <span class="chip">Тенге</span>
+            <span class="chip">Драг. металлы</span>
+          </div>
+          <div class="item-list">
+            <div class="item selected">
+              <div class="item-icon" style="background: #e53935">А</div>
+              <div class="item-name">Альфа-Банк</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">Вы получаете</div>
+          <div class="tabs">
+            <input type="radio" name="t2" id="t2a" />
+            <label for="t2a">Валюта</label>
+            <input type="radio" name="t2" id="t2b" checked />
+            <label for="t2b">Криптовалюта</label>
+          </div>
+          <div class="chips">
+            <span class="chip active">Криптовалюты</span>
+          </div>
+          <div class="item-list">
+            <div class="item selected">
+              <div class="item-icon" style="background: #f7931a">₿</div>
+              <div>
+                <div class="item-name">Bitcoin</div>
+                <div class="item-sub">BTC</div>
+              </div>
+              <div class="item-right">7336349.32 · 1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel exchange-panel">
+          <div class="exchange-header">
+            <div class="panel-title" style="margin: 0">Обмен</div>
+            <button class="swap-btn">⇄</button>
+          </div>
+          <div class="field">
+            <label class="field-label">Отдаете</label>
+            <input type="text" class="field-input" value="1" />
+          </div>
+          <div class="field">
+            <label class="field-label">Получаете</label>
+            <input type="text" class="field-input" value="7000000" />
+          </div>
+          <div class="rate-info">
+            Курс обмена
+            <strong>97.26 RUB = 1 USDT</strong>
+          </div>
+          <button
+            class="btn btn-primary"
+            style="width: 100%; margin-top: 20px; padding: 14px"
+          >
+            Обменять
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">© 2026 ConvCurrency. Все права защищены.</div>
+  </body>
+</html>
